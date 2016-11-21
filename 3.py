@@ -38,14 +38,16 @@ for val in range(5,20,2):
  print(val,end="")
 
  #          CICLO WHILE 
-print("\n")
+
+print()         #print() stampa un \n
+
 val=10
 while val < 20:
  print(str(val)+" ",end="")
  val+=2
  if val==16:
   break
-print("\n")
+print()
 conta=0
 while True:                     # ciclo infinito
  print(str(conta)+" ",end="")
@@ -54,3 +56,84 @@ while True:                     # ciclo infinito
   break
 
 # if/els nel ciclo while e for
+
+
+ # CICLI con brack permette di uscire dal ciclo
+
+print()
+for val in "python":
+ if val == "h":
+  break
+ print(val)
+
+
+ # CICLI con continue permette di saltare alla prima istruzione del ciclo
+print()
+for val in "python":
+ if val == "h":
+  continue
+ print(val)
+
+print()
+for lettera in 'Ciao.Mondo':
+ if lettera == '.':
+  pass # non fa nulla
+  print("_", end="")
+  continue
+ print(lettera, end='')
+
+#____________________________ esercizi
+'''
+Scrivete un programma che chieda all’utente di indovinare una password,
+ma che dia al giocatore solamente 3 possibilità, fallite le quali il programma
+terminerà, stampando “È troppo complicato per voi”
+'''
+password="indovinata"
+print("indovina la password ha 3 tentativi ....")
+tentativo=1
+prova=""
+while tentativo <= 3 :
+ prova=input("Tentativo num. "+str(tentativo)+" :")
+ if prova == password:
+  print("bravo la passowrd è : "+prova)
+  break
+ else:
+  print("no no no ...")
+ tentativo+=1
+else:
+ print("riprova un altra volta")
+
+'''
+Scrivete un programma che chieda due numeri. Se la somma dei due
+numeri supera 100, stampate “Numero troppo grande”
+'''
+print()
+num1=0
+num2=0
+print("inserisci due numeri")
+num1=input("primo numero : ")
+num2=input("secondo numero : ")
+if (int(num1)+int(num2)) > 100:
+ print("numero troppo grande")
+
+
+
+'''
+Scrivete un programma che chieda all’utente il nome. Se viene inserito il
+vostro nome, il programma dovrà rispondere con un “Questo è un bel
+nome”, se il nome inserito è Mario Rossi o Giuseppe Verdi il programma
+dovrà rispondere con una battuta ;) mentre in tutti gli altri casi l’output del
+programma sarà un semplice “Tu hai un bel nome!”.
+'''
+print()
+nome=""
+nome=input("inserisci il tuo nome e cognome :")
+print()
+nome=nome.upper()
+if nome == "STEFANO CORNELLI":
+ print("Questo è un bel nome")
+else:
+ if (nome == "MARIO ROSSI") or (nome == "MARIO ROSSI") :
+  print("hahhhhhhha")
+ else:
+  print("Tu hai un bel nome")
