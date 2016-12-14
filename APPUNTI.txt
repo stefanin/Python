@@ -1,3 +1,9 @@
 Philips 247e
 
 http://www.helldragon.eu/marcello/galli_python/ 
+
+ctrl+x elimina riga
+ctrl+c copia riga
+ctrl+v incolla riga
+
+

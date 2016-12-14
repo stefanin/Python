@@ -55,5 +55,29 @@ print("per rimuovere un valore chiave posso usare pop()  nome_dict.pop('zio')", 
 print("per rimuovere un valore chiave posso usare clear() cancella il dizzionario", nome_dict.clear() )
 print("per ordinare il dizzionario , K=list(nome_dict) K=sorted(K) ")
 
+''' 
+
+comprehension è una modalità di estrazione di sottoinsiemi da liste o dizionari
 
 
+lista = [espressione for variabile in altra_lista if espressione]
+diz = {espr_chiave : espr_valore for espr_chiave, espr_valore in altro_diz if espressione}
+diz = {espr_chiave : espr_valore for variabile in altra_lista if espressione}
+''' 
+
+euro = [2.5, 3.7, 20.9]
+print("Esempio di conversione euro-dollaro",euro)
+print ([x*1.3 for x in euro])
+print([x*1.3 for x in euro if x>3]) # esegue l'operazione solo per valori di x > 3
+
+{1: 101, 2: 102, 3: 103, 4: 104}
+
+
+#enumerate() restituisce un oggetto che contiene coppie composte da indici e valori
+
+a_lista = ['a','b','c']
+a_tuple = ('x','y','z')
+# coppie indice/valore della lista
+
+print([(i, j) for i, j in enumerate(a_lista)])
+print("dizzionario :", dict([(i, j) for i, j in enumerate(a_lista)]))
