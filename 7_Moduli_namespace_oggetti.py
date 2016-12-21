@@ -98,4 +98,3 @@ specializzare il codice
 • Modularità
 è possibile definire dei singoli oggetti riutilizzabili
 '''
-
