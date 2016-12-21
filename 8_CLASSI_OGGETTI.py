@@ -91,3 +91,22 @@ a.__telefono = "334" #essendo una variabile protetta non viene assegnata
 a.stampa()
 a.ziofelice="aaaaaa"
 print(a.ziofelice)
+
+
+'''
+def setWidth(self, value):
+    assert(isinstance(value, int))
+    assert(value>=0)
+    self.__width = value
+    return self
+def setHeight(self, value):
+    assert(isinstance(value, int))
+    assert(value>=0)
+    self.__height = value
+    return self
+img1.setWidth(2000).setHeight(3000)
+
+
+se il metodo ritorna lo stesso oggetto, con una riga di cosice puoi accodare più metodi
+
+'''
