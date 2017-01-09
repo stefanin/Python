@@ -78,6 +78,27 @@ Ma se la variabile è protetta python utilizza la variabile esterna !!!!!
 
 __dict__ : dizzionario che contiene tuttte le variabili dell'oggetto, quindi :
     print(oggetto.__dict_) stampa tutte le variabili
+
+
+Metodo di classe state less :
+
+vengono utilizzati per risparmiare codice
+
+class Picture():
+    def doSomething(self, n):
+    print("Devo fare qualcosa con il valore %d." % n)
+
+    def codice(nome,cognome)        <----------- metodo statico
+        print(nome,cognome)
+
+img1=Picture()
+img1.doSomething(42) # uso il nome dell’istanza
+
+
+Picture.doSomething(img1, 42) # uso stateless il nome della classe e passo l'istanza come primo parametro
+Picture.codice("AAAA","BBBBB")
+
+
 '''
 
 
@@ -104,6 +125,7 @@ def setHeight(self, value):
     assert(value>=0)
     self.__height = value
     return self
+
 img1.setWidth(2000).setHeight(3000)
 
 
