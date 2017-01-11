@@ -1,8 +1,6 @@
 '''
 
-
 CLASSI return SELF e assert() !!!!
-
 
 def setWidth(self, value):
     assert(isinstance(value, int))
@@ -17,8 +15,6 @@ def setHeight(self, value):
     return self
 
 img1.setWidth(2000).setHeight(3000)  <------------  in questo caso è possibile in cscata richiamare miù metodi   
-
-
 
 '''
 
@@ -51,15 +47,14 @@ n1.stampa()
 
 OVERLOADING DEGLI OPERATORI
 
-
 Ho dichiarato una funzione speciale, denominata “__add__“, in grado di effettuare
 l’overloading (la sostituzione) dell’operatore ADD (+)
-
 
 '''
 
 
 class num_comp_overloading:
+      '''   Test overloading inserire quì il man della classe '''
       parte_reale = 0
       parte_immaginaria = 0
 
@@ -80,7 +75,4 @@ n2.parte_reale=1
 n2.parte_immaginaria=7
 
 r=n1+n2
-r.stampa()
-
-
-     
+r.stampa()    
