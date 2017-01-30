@@ -6,4 +6,8 @@ ctrl+x elimina riga
 ctrl+c copia riga
 ctrl+v incolla riga
 
+http://letus.vfdns.org/python/CorsoPython-11.pdf.temp
+
+
+
 
