@@ -8,6 +8,6 @@ ctrl+v incolla riga
 
 http://letus.vfdns.org/python/CorsoPython-11.pdf.temp
 
-
+https://code.activestate.com/pypm/ per ricercare un oggetto / funzione
 
 
